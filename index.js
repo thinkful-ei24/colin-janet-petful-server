@@ -22,6 +22,25 @@ app.use(
   })
 );
 
+//make cat router
+const catRouter = require('./routes/cats.js');
+app.use('/', catRouter);
+
+//TODO make dog router
+const dogRouter = require('./routes/dogs.js');
+app.use('/', dogRouter);
+
+
+app.use((err, req, res, next) => {
+  if(err.status) {
+    const errBody = Object.assign({}, err, { message: err.message });
+    res.status(err.status).json(errBody);
+  } else {
+    console.error(err);
+    res.status(500).json({ message: 'the server shit the bed' });
+  }
+});
+
 function runServer(port = PORT) {
   const server = app
     .listen(port, () => {
@@ -34,7 +53,7 @@ function runServer(port = PORT) {
 }
 
 if (require.main === module) {
-  dbConnect();
+  //dbConnect();
   runServer();
 }
 

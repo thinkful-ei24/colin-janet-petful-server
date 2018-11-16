@@ -1,25 +1,21 @@
 const express = require('express');
-const Dog = require('../dummy-data/dogs.js');
+const dogQueue = require('../dummy-data/dog-queue');
 
 const router = express.Router();
 
 router.get('/dogs', (req, res, next) => {
-  const dog = Dog[0];
-  if(!dog) {
-    return res.json("ALL DOGS GO TO HEAVEN");
-  } else {
-    return res.json(dog);
-  }
+  const dog = dogQueue.peek();
+  return res.json(dog);
+
 });
 
 router.delete('/dogs', (req, res, next) => {
-  const dog = Dog[0];
-  Dog.shift();
+  dogQueue.dequeue();
   return res.sendStatus(204).end();
 });
 
 
-console.log(Dog);
+
 
 module.exports = router;
 

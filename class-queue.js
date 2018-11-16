@@ -7,7 +7,7 @@ class _Node {
 }
 
 class Queue {
-  constructer() {
+  constructor() {
     this.first = null;
     this.last = null;
   }
@@ -41,4 +41,21 @@ class Queue {
     }
     this.last = node;
   }
+
+  peek() {
+    if(!this.first) {
+      return null;
+    }
+    return this.first.value;
+  }
+
+  display() {
+    let tempNode = this.first;
+    while (tempNode) {
+      console.log(tempNode.value);
+      tempNode = tempNode.prev;
+    }
+  }
 }
+
+module.exports = Queue;

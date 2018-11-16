@@ -22,8 +22,13 @@ app.use(
   })
 );
 
-//TODO make cat router
+//make cat router
+const catRouter = require('./routes/cats.js');
+app.use('/', catRouter);
+
 //TODO make dog router
+const dogRouter = require('./routes/dogs.js');
+app.use('/', dogRouter);
 
 
 app.use((err, req, res, next) => {
@@ -48,7 +53,7 @@ function runServer(port = PORT) {
 }
 
 if (require.main === module) {
-  dbConnect();
+  //dbConnect();
   runServer();
 }
 

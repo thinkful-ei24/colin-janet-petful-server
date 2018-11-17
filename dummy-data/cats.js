@@ -10,7 +10,7 @@ const Cats = [
 
   },
   {
-    imageURL:'https://r.hswstatic.com/w_907/gif/tesla-cat.jp://r.hswstatic.com/w_907/gif/tesla-cat.jpg',
+    imageURL:'https://images.unsplash.com/photo-1497910091122-9f8a7746eb33?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjM5OTI2fQ&s=65a503b19db2188813b9e44256ce303f',
     imageDescription: 'a black cat',
     name: 'Snowball',
     sex: 'Male',
@@ -20,7 +20,7 @@ const Cats = [
 
   },
   {
-    imageURL:'https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fpeopledotcom.files.wordpress.com%2F2017%2F11%2Fchimera-cat.jpg%3Fw%3D1500&w=700&c=sc&poi=face&q=8://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fpeopledotcom.files.wordpress.com%2F2017%2F11%2Fchimera-cat.jpg%3Fw%3D1500&w=700&c=sc&poi=face&q=85',
+    imageURL:'https://images.unsplash.com/photo-1517499599364-261589d9cdfc?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjM5OTI2fQ&s=80f2305fa9bb053e476e9c8cb67a8937',
     imageDescription: 'A cat with a two colored face',
     name: 'Harvey Dent',
     sex: 'Male',

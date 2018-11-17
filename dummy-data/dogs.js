@@ -9,7 +9,7 @@ const Dogs = [
     story: "He\s a pug"
   },
   {
-    imageURL: 'https://www.petmd.com/sites/default/files/salmonella-infection-dogs.jp://www.petmd.com/sites/default/files/salmonella-infection-dogs.jpg',
+    imageURL: 'https://images.unsplash.com/photo-1502673530728-f79b4cab31b1?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjM5OTI2fQ&s=024aca86872557aaf616bcabd3411828',
     imageDescription: 'A happy looking dog',
     name: 'Doggo',
     sex: 'Male',
@@ -19,7 +19,7 @@ const Dogs = [
 
   },
   {
-    imageURL: 'http://www.dogster.com/wp-content/uploads/2015/05/Cute%20dog%20listening%20to%20music%201_1.jpg',
+    imageURL: 'https://images.unsplash.com/photo-1506499422601-ecc792cf898e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjM5OTI2fQ&s=fc64e0c16257a100a6e1a574fa3f3ea0',
     imageDescription: 'A smiling golden-brown golden retreiver listening to music.',
     name: 'Zeus',
     sex: 'Male',
